@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    line-height: 1.6;
+}
+
+
+.navigasi {
+    background-color: #443b22;
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+
+.logo {
+float: left;
+padding-top: 20px;
+padding-bottom: 10px;
+padding-left: 30px;
+}
+
+
+.menu {
+    margin-left: 800px;
+    padding-top: 27px;
+}
+
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: #ffdc7a;
+    font-style: italic;
+}
+
+
+.banner {
+    background-image: url(gambar/gambar9.jpg);
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    border-radius: 100px;
+    height: 150px;
+    border: 6px solid white;
+    margin-top: 100px;
+}
+
+
+.banner h1 {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    text-align: center;
+    color: black;
+}
+
+.banner button {
+    background: #ffdc7a;
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.banner button:hover {
+    background-color: #443b22;
+    border: 1px solid #ffffff;
+    color: #ffe7e7;
+}
+
+h1 span:before {
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: #5d0000;
+    font-size: 40px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+
+    50% {
+        content: 'Saya Berlian Nanda Prisilia N';
+    }
+
+    100% {
+        content: 'Terima Kasih Sudah Berkunjung';
+    }
+}
+
+/* About Page Styles */
+#boxabout {
+    background-image: url(gambar/gambar13.jpg);
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    height: 900px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.kotak-about {
+    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+}
+
+.about-item img {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.about-item:hover {
+    background-color: #8c4c4c;
+    color: white;
+}
+
+/* Gallery Page Styles */
+#gallery {
+    background-image: url(gambar/gambar13.jpg);
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    height: 1100px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gallery-item:hover {
+    background-color: #8c4c4c;
+    color: white;
+}
+
+
+/* Contact Page Styles */
+#contact {
+    padding: 30px;
+    text-align: center;
+    background-image: url(gambar/gambar13.jpg);
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+#contact p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+    color: black;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 30px;
+    background-color: #d4d4d4;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #7f2626;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #ffdc7a;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #443b22;
+    color: #ffe7e7;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        margin-left: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
